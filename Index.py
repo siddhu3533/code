@@ -1,16 +1,14 @@
-from collection import Counter
 
 values = []
 
 n = input()
 n = int(n)
 counterVar = 0
-tempVar = ""
+tempVar = 0
 for counterVar in range(n):
     tempVar = input()
     values.append(tempVar)
-countValues = Counter(values)
-
-for key,value in countValues.items():
-    if value >1:
-        print(key)    
+key = 0
+for key in range(n):
+    if values[key] == key:
+        print(key)   
